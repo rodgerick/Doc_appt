@@ -6,5 +6,7 @@ class Appointment < ApplicationRecord
     appointments = Appointment.all
     appointment.map do |appt|
       {id: appt.id, date: appt.date, doctor: appt.doctor, patient: appt.patient}
+    end
   end
+
 end
